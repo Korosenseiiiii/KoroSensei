@@ -2,7 +2,6 @@
 import json
 import os
 
-
 def get_user_list(config, key):
     with open("{}/SaitamaRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
@@ -38,15 +37,14 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
     # OPTIONAL
-    ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = 
+    ##DRAGONS = get_user_list("elevated_users.json", "sudos")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = 
+    DEV_USERS = get_user_list("elevated_users.json", "devs")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = 
+    DEMONS = get_user_list("elevated_users.json", "supports")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = 
-    WOLVES = 
+    TIGERS = get_user_list("elevated_users.json", "tigers")
+    WOLVES = get_user_list("elevated_users.json", "whitelists")
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
