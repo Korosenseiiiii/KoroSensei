@@ -31,7 +31,7 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = "postgres://erhftgpv:Q5hddUsSrBz1Q8pQTdsGLf3oe9eKdviu@lallah.db.elephantsql.com/erhftgpv"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
-    WEBHOOK = True
+    WEBHOOK = False
     INFOPIC = True
     URL = 'https://test-8hbj.onrender.com/bot-webhook'
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
