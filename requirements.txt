@@ -1,4 +1,5 @@
 aiohttp>=2.2.5
+markdown2
 alphabet_detector
 beautifulsoup4
 bleach
