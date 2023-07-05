@@ -33,7 +33,7 @@ class Config(object):
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = True
     INFOPIC = True
-    URL = 'https://test-c9cz.onrender.com/bott'
+    URL = 'https://test-c9cz.onrender.com/'
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
