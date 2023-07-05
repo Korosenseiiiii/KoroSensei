@@ -223,11 +223,11 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="🚑 Support",
-                                url=f"https://t.me/KoroXSensei_Bot",
+                                url=f"https://t.me/Classrooms_Group",
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates",
-                                url="https://t.me/KoroXSensei_Bot",
+                                url="https://t.me/Classrooms_Group",
                             ),
                         ],
                         [
